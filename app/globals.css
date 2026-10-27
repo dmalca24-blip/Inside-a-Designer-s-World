@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-ivory text-ink font-sans antialiased; line-height: 1.75; }
+.prose-body { max-width: 720px; }
+.prose-body p { @apply mb-6 text-lg; }
+@keyframes pop { 0% { transform: scale(1); } 50% { transform: scale(1.35); } 100% { transform: scale(1); } }
+.pop { animation: pop 0.3s ease; }
